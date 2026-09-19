@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CameraStack</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-primary: #c9d1d9;
+            --text-heading: #ffffff;
+            --accent-color: #58a6ff;
+            --accent-green: #3fb950;
+            --accent-red: #f85149;
+            --muted-color: #8b949e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px 32px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            color: var(--text-heading);
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .effective-date {
+            color: var(--muted-color);
+            font-size: 0.95rem;
+        }
+
+        h2 {
+            color: var(--text-heading);
+            font-size: 1.35rem;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .badge-positive {
+            display: inline-block;
+            background-color: rgba(63, 185, 80, 0.15);
+            color: var(--accent-green);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge-negative {
+            display: inline-block;
+            background-color: rgba(248, 81, 73, 0.15);
+            color: var(--accent-red);
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px 14px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(110, 118, 129, 0.1);
+            color: var(--text-heading);
+        }
+
+        .highlight-box {
+            background-color: rgba(88, 166, 255, 0.08);
+            border-left: 4px solid var(--accent-color);
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 24px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            color: var(--muted-color);
+            font-size: 0.875rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CameraStack Privacy Policy</h1>
+            <div class="effective-date">Effective Date: July 20, 2026 | Last Updated: September 2026</div>
+        </header>
+
+        <div class="highlight-box">
+            <strong>Core Principle:</strong> CameraStack is engineered with a strict <em>reliability-first, privacy-first</em> architecture. No camera photos, videos, or audio recordings ever leave your local device.
+        </div>
+
+        <h2>1. Overview</h2>
+        <p>This Privacy Policy explains how <strong>CameraStack</strong> ("the Application") handles user data and diagnostics. We believe in complete transparency regarding the diagnostic and performance information necessary to deliver stable, high-performance camera functionality across diverse Android hardware.</p>
+
+        <h2>2. Data We DO NOT Collect <span class="badge-negative">Strict Protection</span></h2>
+        <ul>
+            <li><strong>Photos & Videos:</strong> Media captured using the app is stored strictly in your device's local media storage or private app directory. No photos or video files are uploaded to any external server.</li>
+            <li><strong>Audio Recordings:</strong> The microphone is utilized solely during video capture to encode audio into your local video file. No audio data is uploaded, streamed, or processed off-device.</li>
+            <li><strong>Biometrics & Faces:</strong> Any on-device frame analysis (such as QR decoding or focus tracking) occurs exclusively in local volatile memory. No biometric data or facial embeddings are generated or exported.</li>
+            <li><strong>Personal Identifiers:</strong> We do not collect names, email addresses, phone numbers, contacts, accounts, or precise GPS locations.</li>
+        </ul>
+
+        <h2>3. Data We Collect <span class="badge-positive">Diagnostic Only</span></h2>
+        <p>To identify device-specific hardware bugs (quirks), validate preview frame rates, and measure camera initialization latency across Android OEMs, we collect anonymized technical metadata:</p>
+        <ul>
+            <li><strong>Device Specifications:</strong> Manufacturer, model, Android API level, RAM tier, and system-on-chip (SoC) architecture.</li>
+            <li><strong>Camera Performance Metrics:</strong> Preview first-frame latency, photo capture completion time, frame-per-second (FPS) stability, and analyzer throughput.</li>
+            <li><strong>Session Diagnostic State:</strong> Selected backend engine (CameraX vs. Camera2), hardware capability level, session token, and feature flag states.</li>
+            <li><strong>Crash & Error Reports:</strong> Anonymized stack traces and error failure codes (e.g., camera disconnection or buffer stall signatures).</li>
+        </ul>
+
+        <h2>4. Data Retention & Deletion Policy</h2>
+        <p>In accordance with our strict data retention windows, diagnostic telemetry is purged according to the following schedule:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Category</th>
+                    <th>Retention Period</th>
+                    <th>Purpose & Scope</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Local Session Telemetry</strong></td>
+                    <td>30 Days</td>
+                    <td>Automatically deleted on-device after 30 days via local rolling purge.</td>
+                </tr>
+                <tr>
+                    <td><strong>Crash Signatures</strong></td>
+                    <td>90 Days</td>
+                    <td>De-identified failure clusters used for long-term stability fixes.</td>
+                </tr>
+                <tr>
+                    <td><strong>Aggregated Metrics</strong></td>
+                    <td>180 Days</td>
+                    <td>Device-bucket P95 latency benchmarks for version comparisons.</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><strong>Immediate Deletion:</strong> Because CameraStack does not require user accounts, uninstalling the app or clearing the app storage from Android Settings immediately and permanently purges all local diagnostic data.</p>
+
+        <h2>5. User Choice & Control</h2>
+        <p>You have full control over diagnostic telemetry. You can opt out at any time directly within the application by navigating to:</p>
+        <p><code>Settings &gt; Developer / Diagnostics &gt; Diagnostic Data &gt; Toggle Off</code></p>
+        <p>When toggled off, no diagnostic events or telemetry logs are generated or recorded.</p>
+
+        <h2>6. Security of Data</h2>
+        <p>When diagnostic summaries are transmitted for crash investigation, all data is encrypted in transit using industry-standard TLS 1.3 encryption. App backup extraction of telemetry is explicitly disabled in the application manifest to prevent extraction via ADB or cloud backups.</p>
+
+        <h2>7. Contact Information</h2>
+        <p>If you have any questions or concerns regarding this Privacy Policy or CameraStack's data handling practices, please contact us at:</p>
+        <p><strong>Developer:</strong> Vijay Tank<br>
+        <strong>Website:</strong> <a href="https://vijaytank.github.io" style="color: var(--accent-color);">https://vijaytank.github.io</a><br>
+        <strong>Repository:</strong> <a href="https://github.com/vijaytank" style="color: var(--accent-color);">https://github.com/vijaytank</a></p>
+
+        <footer>
+            &copy; 2026 CameraStack. All rights reserved. Complies with Google Play User Data Policy.
+        </footer>
+    </div>
+</body>
+</html>
